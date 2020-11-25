@@ -1,0 +1,275 @@
+#page-home {
+   display: grid;
+   grid-template-columns: 100px 2fr 1fr;
+   grid-template-areas:
+    "sidebar container calendar";
+}
+
+#page-home h4 {
+    font-size: 16px;
+}
+
+#page-home .container, .calendar {
+    margin-top: 45px;
+}
+
+#page-home .sidebar{
+    grid-area: sidebar;
+    
+}
+
+#page-home .container {
+    grid-area: container;
+}
+
+#page-home .container .notification {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 550px;
+
+    margin-top: 22px;
+    border-radius: 8px;
+
+    background: #FFF;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+
+#page-home .container .notification h2 {
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+#page-home .container .class {
+    margin-top: 42px;
+}
+
+#page-home .container .class a svg {
+    margin-left: 25px;
+
+}
+#page-home .container .class a {
+    display: flex;
+    margin-top: 22px;
+
+    height: 70px;
+    width: 340px;
+
+    background: #FFF;
+    text-decoration: none;
+
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+    align-items: center;
+}
+
+#page-home .container .class a:hover {
+    background: #702BC2;
+    color: #FFF;
+}
+
+#page-home .container .class a h2 {
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+#page-home .container .table {
+    margin-top: 42px;
+    border-radius: 8px;
+
+    height: 250px;
+    width: 700px;
+
+    background-color: #FFF;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+     "turma codigo alunos"
+     "cursos tipos-codigos quantidade-alunos"
+     "cursos tipos-codigos quantidade-alunos"
+     "cursos tipos-codigos quantidade-alunos";
+}
+
+#page-home .container .table .turma, .cursos, .codigo, .tipos-codigos, .alunos, .quantidade-alunos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#page-home .container .table .turma, .codigo, .alunos {
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#page-home .container .table .turma {
+    border-top-left-radius: 8px;
+}
+
+#page-home .container .table .alunos {
+    border-top-right-radius: 8px;
+}
+
+#page-home .container .table .cursos, .tipos-codigos {
+    box-shadow: 1px 2px 2px 1px  rgba(0, 0, 0, 0.1);
+}
+
+#page-home .container .table .turma {
+    grid-area: turma;
+}
+
+#page-home .container .table .cursos {
+    grid-area: cursos;
+}
+
+#page-home .container .table .codigo {
+    grid-area: codigo;
+}
+
+#page-home .container .table .tipos-codigos {
+    grid-area: tipos-codigos;
+}
+
+#page-home .container .table .alunos {
+    grid-area: alunos;
+}
+
+#page-home .container .table .quantidade-alunos {
+    grid-area: quantidade-alunos;
+}
+
+#page-home .calendar {
+    grid-area: calendar;
+
+    margin-right: 50px;
+
+}
+
+#page-home .calendar .options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#page-home .calendar .options .points {
+    display: flex;
+    align-items: center;
+    color: #F2C94C;
+    font-size: 25px;
+    margin-right: 18px;
+}
+
+#page-home .calendar .options .points h3{
+    font-size: 15px;
+}
+
+#page-home .calendar .options a{
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#page-home .calendar .options a:hover {
+    color: #FFF;
+    background: #702BC2;
+    border-radius: 8px;
+}
+
+#page-home .calendar .options .menu-drop button, img {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+}
+
+#page-home .menu-drop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#page-home .menu-drop .drop-content a {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    right: 30px;
+    align-items: center;
+    margin-top: 3px;
+
+    background: #FFF;
+    color: #702BC2;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#page-home .menu-drop .drop-content a:hover {
+    background: #702BC2;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+#page-home .menu-drop .drop-content {
+    display: none;
+    background-color: #FFF;
+    font-size: 12px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+}
+
+#page-home .menu-drop:hover .drop-content {
+    display: flex;
+    margin-left: 10px;
+}
+
+#page-home .calendar .date h3{
+    display: flex;
+    justify-content: flex-end;
+    margin: 34px 0px 10px;
+}
+
+#page-home .calendar .date .calendario {
+    position: static;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-right: 13%;
+
+    width: 100%;
+    background: #FFF;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+#page-home .calendar .calendar-buttons h2 {
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+#page-home .calendar .calendar-buttons svg {
+    margin-left: 20px;
+}
+#page-home .calendar .calendar-buttons a {
+    display: flex;
+    margin-top: 22px;
+
+    height: 70px;
+    width: 100%;
+
+    background: #FFF;
+    text-decoration: none;
+
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+    align-items: center;
+}
+
+#page-home .calendar .calendar-buttons a:hover {
+    background: #702BC2;
+    color: #FFF;
+}

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside.app-sidebar {
+    position: fixed;
+    width: 61px;
+    height: 100%;
+    background: #FFF;
+    transition: 0.3s;
+    overflow: hidden;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+aside.app-sidebar:hover {
+    width: 180px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+aside.app-sidebar ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+aside.app-sidebar ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+aside.app-sidebar ul li a {
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    background: #FFF;
+}
+
+aside.app-sidebar ul li .footer {
+    margin-top: 150px;
+}
+
+aside.app-sidebar ul li a:hover {
+    background: #702BC2;
+    color: #FFF;
+}
+
+
+aside.app-sidebar ul li img {
+    position: relative;
+    margin: 32px 5px 0px;
+    cursor: default;
+}
+
+aside.app-sidebar ul .logo {
+    display: flex;
+}
+
+aside.app-sidebar ul .logo h2 {
+    margin:25px 5px 130px;
+    cursor: default;
+}
+
+aside.app-sidebar ul li a .icon {
+    position: relative;
+    display: flex;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+aside.app-sidebar ul li a .title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
