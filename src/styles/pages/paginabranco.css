@@ -1,0 +1,5 @@
+#paginaBranco .paginabranco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

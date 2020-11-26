@@ -158,19 +158,28 @@ svg {
 }
 
 #app-content .profile a {
-    margin-top: 18px;
+    margin-top: 15px;
+    margin-right: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
     font-size: 20px;
+    border-radius: 25px;
+    padding: 2px;
+}
+
+#app-content .profile a:hover {
+    background: #702BC2;
+    color: #FFF;
 }
 
 #app-content .profile .points {
     color: gold;
     display: flex;
     align-items: center;
-    margin-top: 18px;
+    margin-top: 15px;
+    margin-right: 6px;
 }
 
 #app-content .profile .points svg {
@@ -187,6 +196,31 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#app-content .profile .menu-drop {
+    position: relative;
+    display: block;
+}
+
+#app-content .profile .dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+#app-content .profile .dropdown-content a {
+    padding: 10px 25px;
+    margin: auto;
+    text-decoration: none;
+}
+
+#app-content .profile .menu-drop:hover .dropdown-content {
+    display: block;
+    color: #702BC2;
+    border: 5px;
+    
 }
 
 #app-content .calendar {

@@ -86,6 +86,11 @@ function Teste() {
                         <button type="button" className="drop">
                             <img src="https://i.pinimg.com/originals/66/36/c7/6636c71761b06f01db52fa22555053e1.jpg" alt="avatar"/>
                         </button>
+                        <div className="dropdown-content">
+                            <Link to="/paginabranco">
+                                <strong>This is the way</strong>
+                            </Link>
+                        </div>
                     </div>
 
                 </div>

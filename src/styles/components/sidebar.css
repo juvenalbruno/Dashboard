@@ -49,17 +49,16 @@ aside.app-sidebar ul li a:hover {
     color: #FFF;
 }
 
-aside.app-sidebar ul li img {
+aside.app-sidebar ul img {
     position: relative;
     margin: 32px 5px 0px;
-    font-weight: 12px;
-    cursor: default;
 }
 
 aside.app-sidebar ul .logo {
     display: flex;
     align-items: center;  
     margin-bottom: 140px;  
+    cursor: default;
 }
 
 aside.app-sidebar ul .logo h2 {
