@@ -88,7 +88,7 @@ function Teste() {
                         </button>
                         <div className="dropdown-content">
                             <Link to="/paginabranco">
-                                <strong>This is the way</strong>
+                                <strong>Página em branco</strong>
                             </Link>
                         </div>
                     </div>
