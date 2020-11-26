@@ -41,9 +41,9 @@ function Sidebar() {
                 </li>
             </ul>
 
-            {/* 
+            {/*
             <header>
-                <img src={logo} alt="Campus Maker"/> 
+                <img src={logo} alt="Campus Maker"/>
             </header>
 
             <body>

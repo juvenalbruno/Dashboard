@@ -1,116 +1,119 @@
 import React from 'react';
-import { FaExclamationCircle, FaPlusCircle, FaUserCircle, FaCog } from 'react-icons/fa';
+import DayPicker from 'react-daypicker';
 import { CgEditBlackPoint } from 'react-icons/cg';
+import { FaCog, FaExclamationCircle, FaPlusCircle, FaUserCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 import 'react-daypicker/lib/DayPicker.css';
-import DayPicker from 'react-daypicker';
-
 import Sidebar from '../components/Sidebar';
-
 import '../styles/pages/home.css';
 
-function Home() {
+function Teste() {
     return (
-        <div id="page-home">
-            <Sidebar />
+        <div id="app-content">
+            <div className="sidebar">
+                <Sidebar />
+            </div>
 
-            <div className="container">
-                <h1>Dashboard</h1>
-
-                <div className="notification">
-                    <FaExclamationCircle />
-                    <h2>Não esqueça de pôr as notas dos seus alunos!</h2>
+            <div className="main-content">
+                <div className="title">
+                    <h2>Dashboard</h2>
+                    <div className="alert">
+                        <FaExclamationCircle />
+                        <strong>Não esqueça de pôr as notas dos seus alunos!</strong>
+                    </div>
                 </div>
 
                 <div className="class">
-                    <h2>Turmas</h2>
-
-                    <Link to="/paginabranco">
-                        <FaPlusCircle />
-                        <h2>Criar uma nova turma</h2>
-                    </Link>
+                    <h3>Turmas</h3>
+                    <div className="class-btn">
+                        <Link to ="/paginabranco">
+                            <FaPlusCircle />
+                            <strong>Criar uma nova turma</strong>
+                        </Link>
+                    </div>
                 </div>
 
                 <div className="table">
                     <div className="turma">
                         <h3>Turma</h3>
+                        <div className="curso">
+                            <strong>Introdução a C</strong>
+                            <strong>Computação em nuvem</strong>
+                            <strong>Introdução a back-end</strong>
+                            <strong>Introdução a front-end</strong>
+                        </div>
                     </div>
-                    <div className="cursos">
-                        <h4>Introdução a C</h4>
-                        <h4>Computação em nuvem</h4>
-                        <h4>Introdução a front-end</h4>
-                    </div>
-
                     <div className="codigo">
                         <h3>Código</h3>
+                        <div className="cod">
+                            <strong>Sistemas Embarcados</strong>
+                            <strong>DEVOPS</strong>
+                            <strong>Desenvolvimento Web</strong>
+                            <strong>Desenvolvimento Mobile</strong>
+                        </div>
                     </div>
-                    <div className="tipos-codigos">
-                        <h4>Sistemas Embarcados</h4>
-                        <h4>DEVOPS</h4>
-                        <h4>Desenvolvimento Web</h4>
-                    </div>
-
-                    <div className="alunos">
+                    <div className="student">
                         <h3>Alunos</h3>
-                    </div>
-                    <div className="quantidade-alunos">
-                        <h4>52</h4>
-                        <h4>31</h4>
-                        <h4>25</h4>
+                        <div className="quant">
+                            <strong>52</strong>
+                            <strong>31</strong>
+                            <strong>25</strong>
+                            <strong>25</strong>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="calendar">
-                <div className="options">
+                <div className="profile">
                     <div className="points">
                         <CgEditBlackPoint />
-                        <h3>57</h3>
+                        <strong>57</strong>
                     </div>
 
-                    <Link to="/paginabranco">
-                        <FaUserCircle />
-                    </Link>
+                    <div className="profil">
+                        <Link to="/paginabranco">
+                            <FaUserCircle />
+                        </Link>
+                    </div>
 
-                    <Link to="/paginabranco">
-                        <FaCog />
-                    </Link>
+                    <div className="configuration">
+                        <Link to="/paginabranco">
+                            <FaCog />
+                        </Link>
+                    </div>
 
                     <div className="menu-drop">
                         <button type="button" className="drop">
                             <img src="https://i.pinimg.com/originals/66/36/c7/6636c71761b06f01db52fa22555053e1.jpg" alt="avatar"/>
                         </button>
-                        <div className="drop-content">
-                            <Link to="paginabranco">
-                                <h3>This is the way</h3>
-                            </Link>
-                        </div>
                     </div>
+
                 </div>
 
-                <div className="date">
-                    <h3>Calendário</h3>
-                    <div className="calendario">
+                <div className="calendar">
+                    <strong>Calendário</strong>
+                    <div className="daypacker">
                         <DayPicker />
                     </div>
                 </div>
 
-                <div className="calendar-buttons">
-
-                    <Link to="/paginabranco">
-                        <FaPlusCircle />
-                        <h2>Criar uma nova atividade</h2>
-                    </Link>
-
-                    <Link to="/paginabranco">
-                        <FaPlusCircle />
-                        <h2>Submeter Notas aos alunos</h2>
-                    </Link>
+                <div className="create-btn">
+                    <div className="create-activities">
+                        <Link to ="/paginabranco">
+                            <FaPlusCircle />
+                            <strong>Criar uma nova turma</strong>
+                        </Link>
+                    </div>
+                    <div className="submit-notes">
+                        <Link to ="/paginabranco">
+                            <FaPlusCircle />
+                            <strong>Submeter notas dos alunos</strong>
+                        </Link>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+            </div>
+   );
 }
 
-export default Home;
+export default Teste;

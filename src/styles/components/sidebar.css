@@ -6,7 +6,7 @@
 
 aside.app-sidebar {
     position: fixed;
-    width: 61px;
+    width: 85px;
     height: 100%;
     background: #FFF;
     transition: 0.3s;
@@ -15,7 +15,7 @@ aside.app-sidebar {
 }
 
 aside.app-sidebar:hover {
-    width: 180px;
+    width: 200px;
     box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -49,27 +49,27 @@ aside.app-sidebar ul li a:hover {
     color: #FFF;
 }
 
-
 aside.app-sidebar ul li img {
-    position: static;
+    position: relative;
     margin: 32px 5px 0px;
-    font-weight: 24px;
+    font-weight: 12px;
     cursor: default;
 }
 
 aside.app-sidebar ul .logo {
     display: flex;
+    align-items: center;  
+    margin-bottom: 140px;  
 }
 
 aside.app-sidebar ul .logo h2 {
-    margin:25px 5px 130px;
-    cursor: default;
+    margin-top: 28px;
 }
 
 aside.app-sidebar ul li a .icon {
     position: relative;
     display: flex;
-    min-width: 60px;
+    min-width: 85px;
     height: 60px;
     line-height: 60px;
     font-size: 24px;
@@ -81,7 +81,7 @@ aside.app-sidebar ul li a .title {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 0px;
+    padding: 5px;
     height: 60px;
     line-height: 60px;
     text-align: start;
