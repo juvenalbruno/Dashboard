@@ -51,8 +51,9 @@ aside.app-sidebar ul li a:hover {
 
 
 aside.app-sidebar ul li img {
-    position: relative;
+    position: static;
     margin: 32px 5px 0px;
+    font-weight: 24px;
     cursor: default;
 }
 

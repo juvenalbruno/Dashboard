@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    margin: 0 12px;
+}
+
+#app-content {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-areas: 
+        "title title profile"
+        "class class calendar"
+        "table table calendar"
+        "table table button"
+    ;
+}
+
+#app-content .title {
+    grid-area: title;
+    margin: 55px 0px 0px 100px ; 
+}
+
+#app-content .title .alert {
+    width: 450px;
+    height: 35px;
+    border-radius: 5px;
+
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    
+    background: #FFF;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#app-content .class {
+    grid-area: class;
+    margin-left: 100px;
+}
+
+#app-content .class .class-btn {
+    display: flex;
+    height: 50px;
+    width: 250px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    background: #FFF;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#app-content .class .class-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    background: #FFF;
+    border-radius: 5px;
+}
+
+#app-content .table {
+    grid-area: table;
+    
+    margin: 0 100px 055px;
+    width: 90%;
+    height: 83%;
+    
+
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+   
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        "turma codigo student"
+        "turma codigo student"
+        "turma codigo student"
+    ;
+}
+
+#app-content .table .turma, .codigo, .student {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    background: rosybrown;
+    
+}
+
+#app-content .table .turma {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#app-content .table .student {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#app-content .table h3 {
+    margin-bottom: 20px;
+}
+
+#app-content .table .curso, .cod, .quant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 55px;
+}
+
+#app-content .table strong {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+#app-content .profile {
+    grid-area: profile;
+    margin: 55px 55px 0 0;
+    display: flex;
+    align-items:  flex-start;
+    justify-content: flex-end;
+
+}
+
+#app-content .profile a {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    font-size: 20px;
+
+}
+
+#app-content .profile .points {
+    color: gold;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+#app-content .profile .points svg {
+    font-size: 23px;
+}
+
+#app-content .profile .menu-drop button, img {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app-content .calendar {
+    grid-area: calendar;
+    margin-right: 55px;
+
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+#app-content .calendar strong {
+    display: flex;
+    justify-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#app-content .calendar .daypacker {
+    width: 290px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;  
+    font-size: 14px; 
+    
+    background: #FFF;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#app-content .create-btn {
+    grid-area: button;
+    margin: 0 55px 55px 0; 
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+}
+
+#app-content .create-activities {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+#app-content .submit-notes {
+    display: flex;
+    justify-content: center;
+}
+
+#app-content .create-btn a {
+    height: 50px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#app-content .create-btn strong {
+    height: 50px;
+    width: 250px;
+
+    display: flex;
+    align-items: center;
+}
